@@ -1,37 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0a0a0a;
-  --surface: #141414;
-  --border: rgba(255, 255, 255, 0.06);
+  --bg: #09090b;
+  --surface: #18181b;
+  --surface-raised: #27272a;
+  --border: rgba(255, 255, 255, 0.08);
   --text: #fafafa;
-  --text-dim: #888;
-  --text-muted: #555;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
 }
 
 @theme inline {
   --color-background: var(--bg);
   --color-foreground: var(--text);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+::selection {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 24px;
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+
+
+code,
+.mono {
+  font-family: var(--font-geist-mono), monospace;
 }

@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
 });
 
@@ -13,11 +18,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ciel - Built for Speed",
+  title: "Ciel Download Manager",
   description: "A high-performance, open-source download manager for Windows. Multi-threaded downloads, video support, and torrent integration.",
   keywords: ["download manager", "windows", "open source", "yt-dlp", "torrent", "fast"],
   openGraph: {
-    title: "Ciel - Built for Speed",
+    title: "Ciel Download Manager",
     description: "A high-performance, open-source download manager for Windows.",
     type: "website",
   },
@@ -31,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${plusJakarta.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
