@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://ciel.site/sitemap.xml',
+        sitemap: 'https://ciel-app.vercel.app/sitemap.xml',
     }
 }

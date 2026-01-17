@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ciel — The Modern Download Manager",
     description: "Multi-threaded, video support, and torrents. All in one lightweight package built with Rust.",
-    url: "https://ciel.site",
+    url: "https://ciel-app.vercel.app",
     siteName: "Ciel",
     images: [
       {
