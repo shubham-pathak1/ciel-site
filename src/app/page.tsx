@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
 import { Github } from "lucide-react";
 import { Header } from "@/components/Header";
@@ -37,7 +37,7 @@ export default function Home() {
                 alt="Ciel Logo"
                 width={80}
                 height={80}
-                className="opacity-90 brightness-110 hover:scale-105 transition-transform duration-300"
+                className="opacity-90 brightness-110 hover:scale-105 transition-transform duration-300 w-auto h-auto"
               />
             </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-20">
               <a
-                href="https://github.com/shubham-pathak1/ciel/releases/latest"
+                href="https://github.com/shubham-pathak1/ciel/releases"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-[var(--text)] text-[var(--bg)] font-semibold font-[family-name:var(--font-plus-jakarta)] hover:bg-white/90 transition-all"
               >
                 Download for Windows
@@ -93,10 +93,6 @@ export default function Home() {
 
         {/* Feature Grid (Bento) */}
         <section id="features" className="max-w-6xl mx-auto pt-20 border-t border-[var(--border)]">
-          <div className="mb-12 px-2 md:px-0">
-            <h2 className="text-3xl font-bold tracking-tight mb-4 font-[family-name:var(--font-plus-jakarta)]">Everything included.</h2>
-            <p className="text-[var(--text-secondary)]">No paid pro versions. No locked features.</p>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-2 md:px-0 md:auto-rows-[240px]">
             {/* Card 1: Torrent - Large 2x2 */}
@@ -130,6 +126,40 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Comparison Section (SEO Targeting) */}
+        <section className="max-w-4xl mx-auto pt-32 pb-12 px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight mb-4 font-[family-name:var(--font-plus-jakarta)]">A Modern Alternative.</h2>
+            <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
+              Tired of bloated, pay-walled, and outdated legacy managers? Ciel is designed for the modern web—built with Rust for safety and performance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-[var(--border)] pt-12">
+            <div>
+              <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                Why switch to Ciel?
+              </h3>
+              <ul className="space-y-6">
+                <ComparisonPoint
+                  title="Native 4K/8K Support"
+                  desc="Directly integrated with yt-dlp. Download high-res videos effortlessly from thousands of sites."
+                />
+                <ComparisonPoint
+                  title="Privacy First"
+                  desc="No tracking or telemetry. Your download history stays local on your machine."
+                />
+              </ul>
+            </div>
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8 flex flex-col justify-center">
+              <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--text-muted)] mb-4">The Ciel Advantage</h4>
+              <p className="text-[var(--text-secondary)] leading-relaxed italic">
+                "Unlike IDM or other legacy managers, Ciel doesn't rely on browser extensions for core functionality. With bundled Rust sidecars for yt-dlp and FFmpeg, it just works out of the box."
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
@@ -160,5 +190,14 @@ function TechBadge({ name, icon }: { name: string; icon: string }) {
       <img src={icon} alt={name} className="w-5 h-5 object-contain opacity-70 group-hover:opacity-100 transition-opacity" />
       <span className="text-sm font-medium tracking-wide">{name}</span>
     </div>
+  );
+}
+
+function ComparisonPoint({ title, desc }: { title: string; desc: string }) {
+  return (
+    <li>
+      <h4 className="font-bold text-white mb-1">{title}</h4>
+      <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{desc}</p>
+    </li>
   );
 }

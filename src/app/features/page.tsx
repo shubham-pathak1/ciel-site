@@ -67,31 +67,39 @@ export default function FeaturesPage() {
                         </div>
                     </section>
 
-                    {/* Technical Requirements */}
+                    {/* Internal Engines */}
                     <section className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8">
                         <h2 className="text-xl font-bold mb-6 text-[var(--text)] font-[family-name:var(--font-plus-jakarta)]">
-                            Technical Requirements
+                            Internal Engines
                         </h2>
-                        <ul className="space-y-4">
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 p-1.5 rounded-md bg-zinc-800 text-zinc-400">
+                        <p className="text-[var(--text-secondary)] mb-8 leading-relaxed">
+                            To ensure Ciel "just works" out of the box, <span className="text-[var(--text)] font-medium">yt-dlp</span> and <span className="text-[var(--text)] font-medium">FFmpeg</span> are bundled directly as Rust sidecars. No manual installation required.
+                        </p>
+                        <div className="grid md:grid-cols-2 gap-8 mb-8">
+                            <div className="flex items-start gap-4">
+                                <div className="mt-1 p-1.5 rounded-md bg-zinc-800 text-zinc-400 shrink-0">
                                     <Film className="w-4 h-4" />
                                 </div>
                                 <div>
                                     <span className="font-medium text-[var(--text)] block mb-1">yt-dlp</span>
-                                    <p className="text-sm text-[var(--text-secondary)]">Required for video download support.</p>
+                                    <p className="text-sm text-[var(--text-secondary)] leading-relaxed">Handles high-speed metadata extraction and video stream downloads.</p>
                                 </div>
-                            </li>
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 p-1.5 rounded-md bg-zinc-800 text-zinc-400">
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <div className="mt-1 p-1.5 rounded-md bg-zinc-800 text-zinc-400 shrink-0">
                                     <Merge className="w-4 h-4" />
                                 </div>
                                 <div>
                                     <span className="font-medium text-[var(--text)] block mb-1">FFmpeg</span>
-                                    <p className="text-sm text-[var(--text-secondary)]">Required for high-quality video muxing and audio extraction.</p>
+                                    <p className="text-sm text-[var(--text-secondary)] leading-relaxed">Handles transparent merging of 4K/8K video and audio tracks.</p>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div className="pt-6 border-t border-[var(--border)]">
+                            <p className="text-xs text-[var(--text-secondary)] italic">
+                                <strong>Note:</strong> Bundling these allows for a seamless, technical-free experience. However, if you prefer a "Lite" version of Ciel without these internal binaries, a separate build is available on request.
+                            </p>
+                        </div>
                     </section>
                 </div>
             </main>

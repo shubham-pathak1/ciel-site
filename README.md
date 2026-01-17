@@ -1,30 +1,18 @@
-# Ciel Website
+# Ciel — Official Website
 
-The official landing page for **[Ciel](https://github.com/shubham-pathak1/ciel)**, the open-source, all-in-one download manager built for speed.
+This repository hosts the source code for the official **[Ciel](https://github.com/shubham-pathak1/ciel)** landing page.
 
-## About Ciel
-Ciel replaces multiple tools with one high-performance native app:
-- **Multi-threaded HTTP** downloader (up to 64 connections).
-- **Video Downloader** (yt-dlp integration for YouTube, Twitter, etc.).
-- **Torrent Client** (Native magnet link support with encryption).
-- **Privacy First** (Offline-first, no telemetry, <50MB RAM).
+Ciel is a high-performance, open-source download manager for Windows that replaces multiple tools with one native experience.
 
-## Website Architecture
-This repository hosts the landing page, designed to mirror Ciel's "Slate & Onyx" premium aesthetic.
+## Key Features
+- **Multi-threaded HTTP**: Optimized engine with segment-based chunk management (up to 64 connections).
+- **Video Downloader**: Integrated `yt-dlp` support for 4K/8K downloads from YouTube, Twitter, and more.
+- **Native Torrent Support**: Full magnet link support with content preview and sequential downloading.
+- **Privacy Focused**: No telemetry, no tracking, and incredibly lightweight on system resources.
 
-### Core Features
-- **Next.js 15 (App Router)**: For SEO, semantic HTML, and edge performance.
-- **Slate & Onyx Design System**: Custom Tailwind configuration matching the desktop app's dark mode UI.
-- **Bento Grid Layout**: A modern, asymmetric feature showcase for visual hierarchy.
-- **Trust-Focused**: Technical specifications and open-source validation over marketing buzzwords.
-- **Performance**: Minimal DOM size and font optimization (Inter + JetBrains Mono).
+## Support & Contributions
 
-## Development
-
-```bash
-npm install
-npm run dev
-```
+If you have any Pull Requests or find any bugs, please report them on the main **[Ciel repository](https://github.com/shubham-pathak1/ciel)**.
 
 ## License
 
