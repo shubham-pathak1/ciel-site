@@ -17,15 +17,15 @@ export function Header() {
                 </Link>
                 <div className="flex items-center gap-2">
                     {isFeaturesPage ? (
-                        <Link href="/" className="hidden sm:block text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2">Home</Link>
+                        <Link href="/" className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2">Home</Link>
                     ) : (
-                        <Link href="/features" className="hidden sm:block text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2">Features</Link>
+                        <Link href="/features" className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2">Features</Link>
                     )}
                     <a
                         href="https://github.com/shubham-pathak1/ciel"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2"
+                        className="hidden sm:block text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text)] transition-colors px-4 py-2"
                     >
                         GitHub
                     </a>
