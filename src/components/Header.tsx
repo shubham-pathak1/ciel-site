@@ -31,6 +31,8 @@ export function Header() {
                     </a>
                     <a
                         href="https://github.com/shubham-pathak1/ciel/releases"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-5 py-2 rounded-full bg-[var(--text)] text-[var(--bg)] text-sm font-medium hover:bg-white/90 transition-colors"
                     >
                         Download

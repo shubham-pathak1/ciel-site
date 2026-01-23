@@ -41,6 +41,7 @@ export default function Home() {
               />
             </div>
 
+            <h1 className="sr-only">Ciel — High Performance Rust Download Manager & Video Downloader</h1>
             <p className="text-xl font-[family-name:var(--font-plus-jakarta)] text-[var(--text-secondary)] leading-relaxed mb-10 max-w-lg mx-auto md:mx-0">
               Ciel is a high-performance, open-source download manager for Windows.
               Built for speed with multi-threaded acceleration, integrated yt-dlp support, and a native torrent engine.
@@ -49,6 +50,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-20">
               <a
                 href="https://github.com/shubham-pathak1/ciel/releases"
+                aria-label="Download Ciel for Windows - Latest Stable Release"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-[var(--text)] text-[var(--bg)] font-semibold font-[family-name:var(--font-plus-jakarta)] hover:bg-white/90 transition-all"
               >
                 Download for Windows
@@ -57,6 +59,7 @@ export default function Home() {
                 href="https://github.com/shubham-pathak1/ciel"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View Ciel Source Code on GitHub"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border border-[var(--border)] text-[var(--text-secondary)] font-semibold font-[family-name:var(--font-plus-jakarta)] hover:text-[var(--text)] hover:border-[var(--text-muted)] transition-colors"
               >
                 <Github className="w-4 h-4" />
