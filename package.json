@@ -1,6 +1,19 @@
 {
   "name": "ciel-site",
   "version": "0.1.0",
+  "description": "Ciel Download Manager Official Website — A fast, open-source download manager for Windows built with Rust.",
+  "keywords": [
+    "ciel",
+    "download manager",
+    "rust",
+    "yt-dlp",
+    "torrent",
+    "downloader",
+    "windows",
+    "idm alternative",
+    "youtube downloader"
+  ],
+  "author": "Shubham Pathak",
   "private": true,
   "scripts": {
     "dev": "next dev",

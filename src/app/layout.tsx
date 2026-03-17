@@ -19,21 +19,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ciel-app.vercel.app"),
+  title: "Ciel — The Modern, High-Performance Download Manager",
+  description: "A fast, open-source download manager for Windows built with Rust. Features multi-threaded acceleration and a native low-RAM torrent engine.",
   alternates: {
     canonical: "https://ciel-app.vercel.app",
   },
   keywords: [
     "ciel", "ciel download manager", "rust based download manger", "fast download manager",
     "lightweight download manager", "rust download manager", "ciel all in one dowload manager",
-    "next gen download manager", "windows downloader", "yt-dlp gui", "yt-dlp downloader",
-    "yt videos downloader", "youtube video downloader", "4k youtube video downloader",
-    "8k video downloader", "hdr video downloader", "torrent downloader windows",
+    "next gen download manager", "windows downloader", "torrent downloader windows",
     "native torrent engine", "multi-threaded downloader", "idm alternative open source",
     "free download manager alternative", "neat download manager rival", "open source downloader",
-    "tauri app downloader", "high speed downloader", "video grabber", "online video saver",
-    "batch video downloader", "playlist downloader", "instagram video downloder",
-    "twitter video downloader", "x.com downloader", "facebook video downloader",
-    "tiktok video downloader", "reddit video downloader", "twitch clip downloader",
+    "tauri app downloader", "high speed downloader",
     "github download manager", "rust language app", "safe downloader", "no telemetry downloader",
     "private download manager", "efficient downloader", "low cpu downloader", "low ram downloader",
     "best windows downloader 2026", "ciel app", "ciel rust", "internet download manager replacement",
@@ -57,7 +55,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Ciel — The Modern, High-Performance Download Manager",
-    description: "Multi-threaded downloads, video grabber, and native torrents. The open-source IDM alternative built with Rust.",
+    description: "Multi-threaded downloads and native torrents. The open-source IDM alternative built with Rust.",
     url: "https://ciel-app.vercel.app",
     siteName: "Ciel",
     images: [
@@ -74,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ciel — The Ultimate Download Manager for Windows",
-    description: "Fast, private, and open-source. Multi-threaded acceleration and native video/torrent support.",
+    description: "Fast, private, and open-source. Multi-threaded acceleration and native torrent support.",
     images: ["/logo.png"],
   },
 };
@@ -93,10 +91,9 @@ const jsonLd = {
   },
   "downloadUrl": "https://github.com/shubham-pathak1/ciel/releases/latest",
   "softwareVersion": "0.1.0",
-  "description": "A high-performance, open-source download manager for Windows built with Rust, featuring multi-threaded acceleration, yt-dlp video downloading, and native torrent support.",
+  "description": "A high-performance, open-source download manager for Windows built with Rust, featuring multi-threaded acceleration and native torrent support.",
   "featureList": [
     "Multi-threaded HTTP downloads",
-    "4K/8K/HDR Video Downloader (yt-dlp)",
     "Native Torrent Client",
     "Sequential Torrent Downloading",
     "No Telemetry or Tracking",
