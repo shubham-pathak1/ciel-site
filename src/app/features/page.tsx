@@ -36,13 +36,6 @@ export default function FeaturesPage() {
             icon: Split
         },
         {
-            label: "Media",
-            title: "Video Support",
-            description: "Integrated with yt-dlp to support high-resolution video and audio from thousands of platforms.",
-            className: "md:col-span-2",
-            icon: Film
-        },
-        {
             label: "P2P",
             title: "Torrent Support",
             description: "Full magnet link support with content preview, metadata polling, and selective file downloading.",
@@ -52,16 +45,9 @@ export default function FeaturesPage() {
         {
             label: "Organization",
             title: "Smart Categorization",
-            description: "Automatically organizes downloads into Videos, Music, Archives, Software, and Documents.",
-            className: "md:col-span-2",
-            icon: FolderTree
-        },
-        {
-            label: "Infrastructure",
-            title: "Internal Sidecars",
-            description: "yt-dlp and FFmpeg are bundled directly as Rust sidecars. No manual installation required for 8K video muxing.",
+            description: "Automatically organizes downloads into Videos, Music, Archives, Software, and Documents based on file headers and extensions.",
             className: "md:col-span-4",
-            icon: Cpu
+            icon: FolderTree
         }
     ];
 
@@ -101,7 +87,7 @@ export default function FeaturesPage() {
                             Core Performance
                         </h2>
                         <p className="text-[var(--text-secondary)] text-lg max-w-2xl leading-relaxed">
-                            The engine under the hood. Ciel combines custom multi-threading with the world's most powerful open-source utilities.
+                            The engine under the hood. Ciel combines custom multi-threading with a native, high-performance Rust torrent implementation.
                         </p>
                     </header>
 

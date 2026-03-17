@@ -44,7 +44,7 @@ export default function Home() {
             <h1 className="sr-only">Ciel — High Performance Rust Download Manager & Video Downloader</h1>
             <p className="text-xl font-[family-name:var(--font-plus-jakarta)] text-[var(--text-secondary)] leading-relaxed mb-10 max-w-lg mx-auto md:mx-0">
               Ciel is a high-performance, open-source download manager for Windows.
-              Built for speed with multi-threaded acceleration, integrated yt-dlp support, and a native torrent engine.
+              Built for speed with multi-threaded acceleration and a native torrent engine.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-20">
@@ -98,27 +98,16 @@ export default function Home() {
         <section id="features" className="max-w-6xl mx-auto pt-20 border-t border-[var(--border)]">
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-2 md:px-0 md:auto-rows-[240px]">
-            {/* Card 1: Torrent - Large 2x2 */}
-            <div className="md:col-span-2 md:row-span-2 rounded-2xl bg-transparent border border-white/10 flex flex-col group overflow-hidden relative">
+            {/* Card 1: Torrent - Large 4x2 */}
+            <div className="md:col-span-4 md:row-span-2 rounded-2xl bg-transparent border border-white/10 flex flex-col group overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10 p-6 pb-2 md:min-h-[140px] min-h-[100px]">
                 <h3 className="text-xl font-bold mb-2">Native Torrent Support</h3>
-                <p className="text-[var(--text-secondary)] leading-relaxed">
-                  Download torrents directly. Selective file downloading, sequential mode, and encryption (PE) included.
+                <p className="text-[var(--text-secondary)] leading-relaxed max-w-2xl">
+                  Download torrents directly. Selective file downloading, sequential mode, and encryption (PE) included. Built with a high-performance Rust engine for minimal resource footprint.
                 </p>
               </div>
               <DemoImage src="/torrent-demo.gif" alt="Torrent Support Demo" />
-            </div>
-
-            {/* Card 2: Video */}
-            <div className="md:col-span-2 md:row-span-2 rounded-2xl bg-transparent border border-white/10 flex flex-col group hover:border-white/20 transition-colors overflow-hidden relative">
-              <div className="relative z-10 p-6 pb-2 md:min-h-[140px] min-h-[100px]">
-                <h3 className="text-xl font-bold mb-2">Video Downloader</h3>
-                <p className="text-sm text-[var(--text-secondary)]">
-                  Powered by <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer" title="visit repo" className="underline underline-offset-2 decoration-white/30 hover:decoration-white/100 transition-all"><code className="bg-black/30 px-1 rounded">yt-dlp</code></a>, Ciel supports downloading 4K/8K & HDR videos from YouTube and also supports video downloading from X, Instagram, etc.
-                </p>
-              </div>
-              <DemoImage src="/yt-demo.gif" alt="Video Downloader Demo" />
             </div>
           </div>
 
