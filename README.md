@@ -6,9 +6,7 @@ Ciel is a high-performance, open-source download manager for Windows that replac
 
 ## Key Features
 - **Multi-threaded HTTP**: Optimized engine with segment-based chunk management (up to 64 connections).
-- **Video Downloader**: Integrated `yt-dlp` support for 4K/8K downloads from YouTube, Twitter, and more.
 - **Native Torrent Support**: Full magnet link support with content preview and sequential downloading.
-- **Privacy Focused**: No telemetry, no tracking, and incredibly lightweight on system resources.
 
 ## Support & Contributions
 
