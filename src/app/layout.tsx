@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/64x64.png",
-    shortcut: "/64x64.png",
-    apple: "/64x64.png",
+    icon: "https://ik.imagekit.io/shubhampathak/ciel-site/64x64.png",
+    shortcut: "https://ik.imagekit.io/shubhampathak/ciel-site/64x64.png",
+    apple: "https://ik.imagekit.io/shubhampathak/ciel-site/64x64.png",
   },
   openGraph: {
     title: "Ciel — The Modern, High-Performance Download Manager",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: "Ciel",
     images: [
       {
-        url: "/logo.png",
+        url: "https://ik.imagekit.io/shubhampathak/ciel-site/logo.png",
         width: 1200,
         height: 630,
         alt: "Ciel - The Rust-based Download Manager",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ciel — The Ultimate Download Manager for Windows",
     description: "Fast, private, and open-source. Multi-threaded acceleration and native torrent support.",
-    images: ["/logo.png"],
+    images: ["https://ik.imagekit.io/shubhampathak/ciel-site/logo.png"],
   },
 };
 

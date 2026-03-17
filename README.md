@@ -1,4 +1,4 @@
-# Ciel — Official Website
+# <img src="https://ik.imagekit.io/shubhampathak/ciel-site/64x64.png" width="32" height="32" /> Ciel — Official Website
 
 This repository hosts the source code for the official **[Ciel](https://github.com/shubham-pathak1/ciel)** landing page.
 

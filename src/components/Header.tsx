@@ -12,7 +12,14 @@ export function Header() {
         <header className="fixed top-6 left-0 right-0 z-50 flex justify-center px-6 font-[family-name:var(--font-plus-jakarta)]">
             <nav className="w-full max-w-3xl h-14 pl-4 pr-2 rounded-full border border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur-md shadow-2xl flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3 opacity-90 hover:opacity-100 transition-opacity pl-2">
-                    <Image src="/logo.png" alt="Ciel" width={24} height={24} className="brightness-110 w-auto h-auto" />
+                    <Image 
+                        src="https://ik.imagekit.io/shubhampathak/ciel-site/logo.png" 
+                        alt="Ciel" 
+                        width={24} 
+                        height={24} 
+                        style={{ width: 'auto', height: 'auto' }}
+                        className="brightness-110" 
+                    />
                     <span className="font-semibold tracking-tight text-[15px] font-[family-name:var(--font-plus-jakarta)]">Ciel</span>
                 </Link>
                 <div className="flex items-center gap-2">

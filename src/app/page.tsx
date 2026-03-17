@@ -33,11 +33,12 @@ export default function Home() {
             {/* Hero Logo Visual */}
             <div className="mb-8 flex justify-center md:justify-start md:pl-1">
               <Image
-                src="/logo.png"
+                src="https://ik.imagekit.io/shubhampathak/ciel-site/logo.png"
                 alt="Ciel Logo"
                 width={80}
                 height={80}
-                className="opacity-90 brightness-110 hover:scale-105 transition-transform duration-300 w-auto h-auto"
+                style={{ width: 'auto', height: 'auto' }}
+                className="opacity-90 brightness-110 hover:scale-105 transition-transform duration-300"
               />
             </div>
 
@@ -83,7 +84,7 @@ export default function Home() {
           <div className="relative group w-full md:w-[120%] md:-ml-[10%] transition-all duration-500">
             <div className="relative z-10 rounded-xl bg-[var(--surface)] border border-[var(--border)] shadow-2xl overflow-hidden">
               <Image
-                src="/ciel_demo.png"
+                src="https://ik.imagekit.io/shubhampathak/ciel-site/ciel_demo.png"
                 alt="Ciel App Screenshot"
                 width={1000}
                 height={750}
@@ -107,7 +108,7 @@ export default function Home() {
                   Download torrents directly. Selective file downloading, sequential mode, and encryption (PE) included. Built with a high-performance Rust engine for minimal resource footprint.
                 </p>
               </div>
-              <DemoImage src="/torrent-demo.gif" alt="Torrent Support Demo" />
+              <DemoImage src="https://ik.imagekit.io/shubhampathak/ciel-site/torrent-demo.gif" alt="Torrent Support Demo" />
             </div>
           </div>
 
