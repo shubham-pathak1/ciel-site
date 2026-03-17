@@ -55,7 +55,7 @@ export default function FeaturesPage() {
         {
             label: "Utilities",
             title: "Clipboard Monitoring",
-            description: "Ciel's 'Autocatch' technology works in the background to detect URLs and magnet links in your clipboard. Add downloads instantly without ever leaving your browser.",
+            description: "Automatically catch URLs and magnet links from your clipboard and add them to Ciel.",
             className: "md:col-span-2 md:row-span-2",
             icon: ClipboardCheck
         },
@@ -68,8 +68,8 @@ export default function FeaturesPage() {
         },
         {
             label: "Modern",
-            title: "Automation",
-            description: "Automatic folder reveal, system shutdown options, and sound notifications to keep you informed.",
+            title: "Scheduled Downloads",
+            description: "Schedule downloads to run at a specific time, at your convenience.",
             className: "md:col-span-2",
             icon: Settings2
         }

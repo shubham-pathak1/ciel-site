@@ -122,9 +122,6 @@ export default function Home() {
         <section className="max-w-4xl mx-auto pt-32 pb-48 px-6">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight mb-4 font-[family-name:var(--font-plus-jakarta)]">A better alternative!!!</h2>
-            <p className="text-[var(--text-secondary)] max-w-2xl mx-auto italic">
-              Tired of bloated, pay-walled, and outdated legacy managers? Ciel is designed for the modern web—built with Rust for safety and performance.
-            </p>
           </div>
         </section>
       </main>
